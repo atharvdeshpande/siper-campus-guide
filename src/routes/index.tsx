@@ -38,9 +38,21 @@ function Home() {
           className="absolute inset-0 size-full object-cover"
         />
         <div className="hero-overlay absolute inset-0" />
-        <div className="relative mx-auto max-w-6xl px-5 py-28 md:py-36">
-          <p className="eyebrow">Lahar · Bhind · Madhya Pradesh</p>
-          <h1 className="mt-4 max-w-3xl font-display text-4xl leading-[1.08] text-primary-foreground md:text-6xl">
+        <div className="relative mx-auto max-w-6xl px-5 py-24 md:py-32">
+          <div className="flex items-center gap-3">
+            <img
+              src="/siper-logo.png"
+              alt="SIPER Official Seal"
+              width={64}
+              height={64}
+              className="size-14 md:size-16 rounded-full object-contain bg-white p-1 shadow-lg ring-2 ring-accent backdrop-blur"
+            />
+            <div>
+              <p className="eyebrow !text-accent-foreground font-bold">Lahar · Bhind · Madhya Pradesh</p>
+              <p className="text-xs font-semibold text-primary-foreground/90">Estd. 2002 • PCI Approved • RGPV Affiliated</p>
+            </div>
+          </div>
+          <h1 className="mt-4 max-w-3xl font-display text-4xl font-bold leading-[1.08] text-primary-foreground md:text-6xl">
             Sun Institute of Pharmaceutical Education &amp; Research
           </h1>
           <p className="mt-5 max-w-xl text-base text-primary-foreground/80 md:text-lg">

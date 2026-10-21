@@ -7,10 +7,22 @@ export function Footer() {
     <footer className="mt-auto border-t border-border bg-secondary/60">
       <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 md:grid-cols-3">
         <div>
-          <h3 className="font-display text-lg">{college.short}, Lahar</h3>
+          <div className="flex items-center gap-3">
+            <img
+              src="/siper-logo.png"
+              alt="SIPER Lahar Logo"
+              width={48}
+              height={48}
+              className="size-12 shrink-0 rounded-full object-contain drop-shadow-sm bg-white p-0.5"
+            />
+            <div>
+              <h3 className="font-display text-lg font-bold">{college.short}, Lahar</h3>
+              <p className="text-xs text-muted-foreground">Estd. {college.established} • PCI Approved</p>
+            </div>
+          </div>
           <p className="mt-3 max-w-sm text-sm text-muted-foreground">
-            {college.name}. Affiliated to {college.affiliation} and approved by the Pharmacy
-            Council of India.
+            {college.name}. Affiliated to {college.affiliation}, approved by the Pharmacy
+            Council of India (PCI) &amp; AICTE.
           </p>
         </div>
 

@@ -57,8 +57,20 @@ function About() {
           </div>
 
           <aside className="rounded-xl border border-border bg-card p-6 shadow-soft">
-            <h3 className="text-lg">At a glance</h3>
-            <dl className="mt-4 space-y-4 text-sm">
+            <div className="flex items-center gap-3 border-b border-border pb-4 mb-4">
+              <img
+                src="/siper-logo.png"
+                alt="SIPER Crest"
+                width={52}
+                height={52}
+                className="size-13 rounded-full object-contain bg-white p-0.5 drop-shadow-sm"
+              />
+              <div>
+                <h3 className="text-lg font-bold text-foreground">At a glance</h3>
+                <p className="text-xs text-muted-foreground">Key Institutional Facts</p>
+              </div>
+            </div>
+            <dl className="space-y-4 text-sm">
               <div>
                 <dt className="font-semibold">Established</dt>
                 <dd className="text-muted-foreground">{college.established}</dd>

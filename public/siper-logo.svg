@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Filter for subtle depth -->
+    <filter id="logoShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- 360-Degree Red Sunburst Rays (Alternating Long & Short) -->
+  <g stroke="#DC2626" stroke-width="5" stroke-linecap="round">
+    <!-- 0 deg (Top) -->
+    <line x1="250" y1="18" x2="250" y2="60" />
+    <!-- 15 deg -->
+    <line x1="310" y1="34" x2="299" y2="74" />
+    <!-- 30 deg -->
+    <line x1="366" y1="49" x2="338" y2="98" />
+    <!-- 45 deg -->
+    <line x1="414" y1="86" x2="382" y2="118" stroke-width="6" />
+    <!-- 60 deg -->
+    <line x1="451" y1="134" x2="402" y2="162" />
+    <!-- 75 deg -->
+    <line x1="466" y1="190" x2="426" y2="201" />
+    <!-- 90 deg (Right) -->
+    <line x1="482" y1="250" x2="440" y2="250" stroke-width="6" />
+    <!-- 105 deg -->
+    <line x1="466" y1="310" x2="426" y2="299" />
+    <!-- 120 deg -->
+    <line x1="451" y1="366" x2="402" y2="338" />
+    <!-- 135 deg -->
+    <line x1="414" y1="414" x2="382" y2="382" stroke-width="6" />
+    <!-- 150 deg -->
+    <line x1="366" y1="451" x2="338" y2="402" />
+    <!-- 165 deg -->
+    <line x1="310" y1="466" x2="299" y2="426" />
+    <!-- 180 deg (Bottom) -->
+    <line x1="250" y1="482" x2="250" y2="440" stroke-width="6" />
+    <!-- 195 deg -->
+    <line x1="190" y1="466" x2="201" y2="426" />
+    <!-- 210 deg -->
+    <line x1="134" y1="451" x2="162" y2="402" />
+    <!-- 225 deg -->
+    <line x1="86" y1="414" x2="118" y2="382" stroke-width="6" />
+    <!-- 240 deg -->
+    <line x1="49" y1="366" x2="98" y2="338" />
+    <!-- 255 deg -->
+    <line x1="34" y1="310" x2="74" y2="299" />
+    <!-- 270 deg (Left) -->
+    <line x1="18" y1="250" x2="60" y2="250" stroke-width="6" />
+    <!-- 285 deg -->
+    <line x1="34" y1="190" x2="74" y2="201" />
+    <!-- 300 deg -->
+    <line x1="49" y1="134" x2="98" y2="162" />
+    <!-- 315 deg -->
+    <line x1="86" y1="86" x2="118" y2="118" stroke-width="6" />
+    <!-- 330 deg -->
+    <line x1="134" y1="49" x2="162" y2="98" />
+    <!-- 345 deg -->
+    <line x1="190" y1="34" x2="201" y2="74" />
+
+    <!-- Intermediate finer rays -->
+    <line x1="281" y1="26" x2="276" y2="58" stroke-width="3.5" />
+    <line x1="339" y1="40" x2="320" y2="70" stroke-width="3.5" />
+    <line x1="391" y1="67" x2="363" y2="95" stroke-width="3.5" />
+    <line x1="433" y1="109" x2="395" y2="137" stroke-width="3.5" />
+    <line x1="460" y1="161" x2="416" y2="180" stroke-width="3.5" />
+    <line x1="474" y1="220" x2="433" y2="225" stroke-width="3.5" />
+    <line x1="474" y1="280" x2="433" y2="275" stroke-width="3.5" />
+    <line x1="460" y1="339" x2="416" y2="320" stroke-width="3.5" />
+    <line x1="433" y1="391" x2="395" y2="363" stroke-width="3.5" />
+    <line x1="391" y1="433" x2="363" y2="405" stroke-width="3.5" />
+    <line x1="339" y1="460" x2="320" y2="430" stroke-width="3.5" />
+    <line x1="281" y1="474" x2="276" y2="442" stroke-width="3.5" />
+    <line x1="219" y1="474" x2="224" y2="442" stroke-width="3.5" />
+    <line x1="161" y1="460" x2="180" y2="430" stroke-width="3.5" />
+    <line x1="109" y1="433" x2="137" y2="405" stroke-width="3.5" />
+    <line x1="67" y1="391" x2="95" y2="363" stroke-width="3.5" />
+    <line x1="40" y1="339" x2="70" y2="320" stroke-width="3.5" />
+    <line x1="26" y1="280" x2="58" y2="275" stroke-width="3.5" />
+    <line x1="26" y1="220" x2="58" y2="225" stroke-width="3.5" />
+    <line x1="40" y1="161" x2="70" y2="180" stroke-width="3.5" />
+    <line x1="67" y1="109" x2="95" y2="137" stroke-width="3.5" />
+    <line x1="109" y1="67" x2="137" y2="95" stroke-width="3.5" />
+    <line x1="161" y1="40" x2="180" y2="70" stroke-width="3.5" />
+    <line x1="219" y1="26" x2="224" y2="58" stroke-width="3.5" />
+  </g>
+
+  <!-- Central Circular Seal Field -->
+  <circle cx="250" cy="250" r="185" fill="#FFFFFF" stroke="#000000" stroke-width="7" filter="url(#logoShadow)" />
+  <circle cx="250" cy="250" r="172" fill="none" stroke="#000000" stroke-width="1.5" />
+
+  <!-- Pharmacy Chalice / Bowl of Hygieia (Bright Yellow with Black Outlines) -->
+  <g id="chalice">
+    <!-- Chalice Base -->
+    <ellipse cx="250" cy="342" rx="42" ry="10" fill="#FFD700" stroke="#000000" stroke-width="5" />
+    <!-- Chalice Stem -->
+    <path d="M 238 275 L 238 335 Q 238 340 250 340 Q 262 340 262 335 L 262 275 Z" fill="#FFD700" stroke="#000000" stroke-width="5" />
+
+    <!-- Chalice Bowl Body -->
+    <path d="M 178 190 C 178 275, 235 285, 250 285 C 265 285, 322 275, 322 190 Z" fill="#FFD700" stroke="#000000" stroke-width="5.5" />
+    <!-- Chalice Rim / Top Opening -->
+    <ellipse cx="250" cy="190" rx="72" ry="18" fill="#FFE55C" stroke="#000000" stroke-width="5" />
+
+    <!-- Red "Rx" Medical Symbol Inside Bowl -->
+    <g transform="translate(250, 236) scale(1.15)">
+      <!-- R -->
+      <path d="M -24 -24 L -24 16 M -24 -24 L -6 -24 C 5 -24, 7 -10, -6 -10 L -24 -10 M -12 -10 L 0 16" fill="none" stroke="#DC2626" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+      <!-- x -->
+      <path d="M 4 2 L 18 16 M 18 2 L 4 16" fill="none" stroke="#DC2626" stroke-width="5.5" stroke-linecap="round" />
+    </g>
+  </g>
+
+  <!-- Coiled Serpent (Wrapped around the stem and reaching above the rim) -->
+  <g id="serpent" fill="#000000" stroke="#000000">
+    <!-- Lower Coil around stem -->
+    <path d="M 226 318 C 220 305, 275 305, 272 295 C 268 285, 222 288, 232 265" fill="none" stroke="#000000" stroke-width="12" stroke-linecap="round" />
+    <!-- Upper Body coiling along right side to top rim -->
+    <path d="M 248 268 C 285 260, 335 240, 332 195 C 330 162, 305 150, 278 152 C 262 153, 252 160, 245 168" fill="none" stroke="#000000" stroke-width="11" stroke-linecap="round" />
+    <!-- Serpent Head looking down into bowl -->
+    <path d="M 246 168 C 240 172, 232 170, 230 165 C 228 158, 238 154, 248 158 Z" fill="#000000" />
+    <!-- Serpent Eye -->
+    <circle cx="236" cy="162" r="1.5" fill="#FFFFFF" />
+    <!-- Forked Tongue -->
+    <path d="M 229 168 L 222 172 M 222 172 L 217 170 M 222 172 L 218 176" fill="none" stroke="#DC2626" stroke-width="2" stroke-linecap="round" />
+  </g>
+
+  <!-- Circular Paths for Bottom Text Inscriptions -->
+  <path id="leftArc" d="M 125 315 A 155 155 0 0 0 215 375" fill="none" />
+  <path id="rightArc" d="M 285 375 A 155 155 0 0 0 375 315" fill="none" />
+
+  <!-- Text "SIPER" on Left Arc -->
+  <text fill="#000000" font-family="'Plus Jakarta Sans', Arial, Helvetica, sans-serif" font-size="28" font-weight="900" letter-spacing="4">
+    <textPath href="#leftArc" startOffset="50%" text-anchor="middle">
+      SIPER
+    </textPath>
+  </text>
+
+  <!-- Text "LAHAR" on Right Arc -->
+  <text fill="#000000" font-family="'Plus Jakarta Sans', Arial, Helvetica, sans-serif" font-size="28" font-weight="900" letter-spacing="4">
+    <textPath href="#rightArc" startOffset="50%" text-anchor="middle">
+      LAHAR
+    </textPath>
+  </text>
+</svg>

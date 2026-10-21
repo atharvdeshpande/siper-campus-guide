@@ -18,16 +18,22 @@ export function Nav() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/70 bg-background/90 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3">
-        <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <span className="grid size-10 shrink-0 place-items-center rounded-full bg-primary font-display text-lg font-semibold text-primary-foreground">
-            S
-          </span>
-          <span className="leading-tight">
-            <span className="block font-display text-base font-semibold">SIPER, Lahar</span>
-            <span className="block text-[11px] tracking-wide text-muted-foreground">
-              Pharmaceutical Education &amp; Research
+        <Link to="/" className="flex items-center" onClick={() => setOpen(false)}>
+          <img
+            src="/siper-logo.png"
+            alt="SIPER Lahar Logo"
+            width={44}
+            height={44}
+            className="size-11 shrink-0 rounded-full object-contain drop-shadow-sm transition-transform hover:scale-105"
+          />
+          <div className="ml-3 leading-tight">
+            <span className="block font-display text-base font-bold tracking-tight text-foreground">
+              SIPER, Lahar
             </span>
-          </span>
+            <span className="block text-[11px] font-medium tracking-wide text-muted-foreground">
+              Sun Institute of Pharmaceutical Education &amp; Research
+            </span>
+          </div>
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex">

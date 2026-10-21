@@ -27,44 +27,94 @@ export const Route = createFileRoute("/campus")({
 });
 
 function Campus() {
+  const photos = [
+    {
+      src: campusImg,
+      title: "Main Administrative & Central Block",
+      category: "Administration",
+      desc: "Symmetrical two-story campus building with arched portico, manicured flower gardens, and stone courtyards.",
+    },
+    {
+      src: labImg,
+      title: "Pharmaceutics & Chemistry Lab",
+      category: "Laboratories",
+      desc: "Fully equipped pharmaceutical testing and formulation laboratory with precision balances, titration units, and glassware.",
+    },
+    {
+      src: libraryImg,
+      title: "Central Library & Reading Hall",
+      category: "Knowledge Center",
+      desc: "Repository of 8,400+ pharmaceutical textbooks, reference volumes, and national/international scientific journals.",
+    },
+  ];
+
   return (
     <>
       <PageHeader
-        eyebrow="Campus life"
+        eyebrow="Campus Life & Infrastructure"
         title="Facilities on the Lahar campus"
-        intro="Everything a pharmacy student needs within walking distance of the academic block."
+        intro="Everything a pharmacy student needs within walking distance: 16 high-tech laboratories, modern classrooms, central library, and green courtyards."
       />
 
       <section className="section-pad mx-auto max-w-6xl px-5">
         <div className="grid gap-6 md:grid-cols-3">
           {facilities.map((f) => (
-            <article key={f.title} className="rounded-xl border border-border bg-card p-6 shadow-soft">
-              <h2 className="text-xl">{f.title}</h2>
-              <p className="mt-3 text-sm text-muted-foreground">{f.text}</p>
+            <article key={f.title} className="rounded-xl border border-border bg-card p-6 shadow-soft transition-transform hover:-translate-y-1">
+              <h2 className="text-xl font-bold text-foreground">{f.title}</h2>
+              <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{f.text}</p>
             </article>
           ))}
         </div>
       </section>
 
-      <section className="bg-secondary/50">
-        <div className="section-pad mx-auto max-w-6xl px-5">
-          <p className="eyebrow">Gallery</p>
-          <h2 className="mt-3 text-3xl">Around the institute</h2>
-          <div className="mt-8 grid gap-5 md:grid-cols-3">
-            {[
-              { src: campusImg, alt: "Academic block and campus lawns" },
-              { src: labImg, alt: "Pharmaceutics laboratory session" },
-              { src: libraryImg, alt: "Library reading room" },
-            ].map((img) => (
-              <img
-                key={img.alt}
-                src={img.src}
-                alt={img.alt}
-                width={1200}
-                height={800}
-                loading="lazy"
-                className="h-64 w-full rounded-xl object-cover shadow-soft"
-              />
+      <section className="bg-secondary/40 py-16">
+        <div className="mx-auto max-w-6xl px-5">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
+            <div>
+              <p className="eyebrow">Visual Tour</p>
+              <h2 className="mt-2 text-3xl font-display font-bold">Around SIPER Lahar</h2>
+              <p className="mt-2 text-muted-foreground text-sm max-w-xl">
+                Explore the academic spaces, practical research laboratories, and vibrant grounds of our 5-acre campus in Lahar, Bhind.
+              </p>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
+                5-Acre Green Campus
+              </span>
+              <span className="inline-flex items-center rounded-full bg-accent/20 px-3 py-1 text-xs font-semibold text-accent-foreground">
+                16 Laboratories
+              </span>
+            </div>
+          </div>
+
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            {photos.map((item) => (
+              <div
+                key={item.title}
+                className="group overflow-hidden rounded-2xl border border-border bg-card shadow-soft transition-all duration-300 hover:shadow-lift"
+              >
+                <div className="relative aspect-[16/10] overflow-hidden bg-muted">
+                  <img
+                    src={item.src}
+                    alt={item.title}
+                    width={1200}
+                    height={800}
+                    loading="lazy"
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <span className="absolute top-3 left-3 rounded-md bg-background/90 px-2.5 py-1 text-[11px] font-semibold tracking-wide text-foreground backdrop-blur">
+                    {item.category}
+                  </span>
+                </div>
+                <div className="p-5">
+                  <h3 className="text-lg font-bold text-foreground group-hover:text-primary transition-colors">
+                    {item.title}
+                  </h3>
+                  <p className="mt-2 text-xs text-muted-foreground leading-relaxed">
+                    {item.desc}
+                  </p>
+                </div>
+              </div>
             ))}
           </div>
         </div>
